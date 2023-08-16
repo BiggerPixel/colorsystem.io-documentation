@@ -1,82 +1,125 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
+  "versions": [
+    "BETA"
+  ],
+  "name": "ColorSystem.io",
   "logo": {
     "dark": "/logo/dark.svg",
-    "light": "/logo/light.svg"
+    "light": "/logo/light.svg",
+    "href": "https://beta.colorsystem.io"
   },
   "favicon": "/favicon.png",
   "colors": {
-    "primary": "#9563FF",
-    "light": "#AE87FF",
-    "dark": "#0D001D",
+    "primary": "#08855f",
+    "light": "#6baf8e",
+    "dark": "#043f37",
     "background": {
-      "dark": "#090014"
+      "dark": "#021311",
+      "light": "#e6e6e6"
     },
     "anchors": {
-      "from": "#FF7F57",
-      "to": "#9563FF"
+      "from": "#3f9b73",
+      "to": "#005546"
     }
   },
   "topbarLinks": [
     {
-      "name": "Support",
-      "url": "mailto:hi@mintlify.com"
+      "name": "Figma Plugin",
+      "url": "https://px.ls/color-plugin"
     }
   ],
   "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "name": "Create Color System",
+    "url": "https://beta.colorsystem.io/new"
   },
   "tabs": [
     {
-      "name": "API Reference",
-      "url": "api-reference"
+      "name": "Color Theory",
+      "url": "color-theory"
     }
   ],
   "anchors": [
     {
-      "name": "Documentation",
-      "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
+      "name": "Get Early Access to the BETA",
+      "icon": "rocket",
+      "url": "https://beta.colorsystem.io/join"
     },
     {
-      "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
+      "name": "Figma Plugin",
+      "icon": "figma",
+      "url": "https://px.ls/color-plugin"
     },
     {
       "name": "Blog",
       "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
+      "url": "https://beta.colorsystem.io/blog"
     }
   ],
   "navigation": [
     {
-      "group": "Get Started",
-      "pages": ["introduction", "quickstart", "development"]
-    },
-    {
-      "group": "Essentials",
-      "pages": ["essentials/markdown", "essentials/code", "essentials/images", "essentials/settings", "essentials/navigation"]
-    },
-    {
-      "group": "API Documentation",
-      "pages": ["api-reference/authentication"]
-    },
-    {
-      "group": "Endpoint Examples",
+      "group": "ColorSystem.io",
       "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/update",
-        "api-reference/endpoint/delete"
+        {
+          "group": "Get Started",
+          "pages": [
+            "colorsystem/introduction",
+            "colorsystem/create-your-first-color-system",
+            "colorsystem/preview-your-color-system",
+            "colorsystem/implement-your-color-system"
+          ]
+        },
+        {
+          "group": "Export Stylesheets",
+          "pages": [
+            "colorsystem/export/introduction"
+          ]
+        },
+        {
+          "group": "Managing Your Color Systems",
+          "pages": [
+            "colorsystem/managing-color-systems"
+          ]
+        },
+        {
+          "group": "A/B Testing",
+          "pages": [
+            "colorsystem/ab-testing/introduction"
+          ]
+        }
+      ]
+    },
+    {
+      "group": "Figma Plugin",
+      "pages": [
+        "figma/plugin/introduction"
+      ]
+    },
+    {
+      "group": "Color Theory",
+      "pages": [
+        "color-theory/how-many-colors-do-i-need",
+        "color-theory/the-problem-with-hex-codes",
+        "color-theory/what-is-hue",
+        "color-theory/what-is-saturation",
+        "color-theory/what-is-lightness",
+        "color-theory/color-perception",
+        "color-theory/hue-rotation",
+        "color-theory/working-with-yellow",
+        "color-theory/working-with-grayscales",
+        "color-theory/color-contrast",
+        "color-theory/color-accessibility",
+        "color-theory/designing-for-dark-mode",
+        "color-theory/designing-for-light-mode"
       ]
     }
   ],
   "footerSocials": {
-    "twitter": "https://twitter.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
+    "github": "https://github.com/biggerpixel",
+    "linkedin": "https://www.linkedin.com/company/biggerpixel",
+    "instagram": "https://www.instagram.com/colorsystem.io"
+  },
+  "feedback": {
+    "thumbsRating": true
   }
 }

@@ -1,0 +1,116 @@
+---
+title: "Preview your ColorSystem"
+description: "Experience your new color system right away."
+icon: "eye"
+---
+
+<img src="/images/preview.png" />
+
+In this guide, we'll walk you through previewing a color system created with ColorSystem.io. Get insights into how your palette looks and functions before finalizing your design. It's all about exploring and understanding your color choices. 🎨
+
+### 1. Create a Color System
+
+First [create a color system](https://beta.colorsyste.io/new). Once you have your colorsystem, please copy the ColorSystem ID.
+
+<Tip>Here is a list of ColorSystem ID:s that you can test with </Tip>
+<Accordion title="Example Color Systems">
+If you just want to test this out without creating a color system of your own you can test with any of these:
+
+```txt Barbie Color System Example:
+BARBIE
+```
+
+```txt Spotify Color System Example:
+SPOTIFY
+```
+
+```txt FedEx Color System Example:
+FEDEX
+```
+
+```txt YouTube Color System Example:
+YOUTUBE
+```
+
+```txt Kodak Color System Example:
+KODAK
+```
+
+```txt IKEA Color System Example:
+IKEA
+```
+
+</Accordion>
+
+### 2. Launch the Preview
+
+Just enter the color system id in the box below and click "Launch Preview"
+
+<iframe
+  className="block dark:hidden"
+  width={"100%"}
+  height={52}
+  src="http://localhost:3000/embeds/preview"
+></iframe>
+
+<iframe
+  className="hidden dark:block"
+  width={"100%"}
+  height={52}
+  src="http://localhost:3000/embeds/preview?darkmode"
+></iframe>
+
+<div
+  style={{
+    display: "flex",
+    gap: 16,
+    alignItems: "center",
+    margin: "24px 0",
+  }}
+>
+  <div
+    style={{
+      display: "block",
+      width: "100%",
+      height: 1,
+      backgroundColor: "currentColor",
+    }}
+  />
+  <p style={{ margin: 0 }}>or</p>
+  <div
+    style={{
+      display: "block",
+      width: "100%",
+      height: 1,
+      backgroundColor: "currentColor",
+    }}
+  />
+</div>
+
+Just replace `<ColorSystemId>` with your color system id in the link below.
+
+```
+https://beta.colorsystem.io/preview/<ColorSystemId>
+```
+
+## 3. Toggle Light / Dark Mode
+
+To preview how your site will behave for users with different preferences for dark or light mode, use the Theme Selector component at the top of the preview page.
+
+<Frame caption="Theme is based on user's device settings">
+  <img
+    className="block dark:hidden"
+    src="/images/theme-selector-system-light.png"
+  />
+  <img
+    className="hidden dark:block"
+    src="/images/theme-selector-system-dark.png"
+  />
+
+</Frame>
+<Frame caption="Dark Mode Manually Set">
+<img src="/images/theme-selector-dark.png" />
+</Frame>
+<Frame caption="Light Mode Manually Set">
+<img src="/images/theme-selector-light.png" />
+</Frame>
